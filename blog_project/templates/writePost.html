@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load static%}
+<html lang="en" dir="ltr">
+  <head>
+     <link rel="stylesheet" href="{% static "bootstrap.css"%}">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+
+
+
+<form  method="post" class="write_post_class" >
+  {{form.as_p}}
+   {% csrf_token %}
+
+  <input type="submit" name="" value="post" class="btn btn-info">
+
+
+</form>
+
+
+
+  </body>
+</html>

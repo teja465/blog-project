@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="home page" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+     <link rel="stylesheet" href="{% static "index.css"%}">
+     <link rel="stylesheet" href="{% static "bootstrap.css"%}">
+    <title>
+      {% block title%}
+      {% endblock %}
+
+
+    </title>
+
+    <link rel="stylesheet" href="{% static 'index.css' %}">
+  </head>
+  <body>
+
+
+
+
+
+      {%block content%}
+
+
+      {% endblock%}
+<!--######################################################################-->
+{% block side%}
+
+
+
+<h2>&emsp;&emsp;side bar block</h2>
+<p>&emsp;it is a sidebar any important tags or
+   notifications will be
+    displayed here in future</p>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+{% endblock%}
+
+<!--######################################################################-->
+
+{% block pagination%}
+
+
+{% endblock%}
+
+
+
+
+  </body>
+</html>

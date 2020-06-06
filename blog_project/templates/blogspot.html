@@ -1,0 +1,36 @@
+{% extends 'index.html'%}
+
+
+
+{% block  content%}
+
+
+<div class="content">
+  <a href="http://127.0.0.1:8000/ " class="btn btn-info"v>back</a>
+
+
+
+    <h1 id='ttle'>{{post.title}}</h1>
+    <p> &nbsp;&nbsp;&nbsp;&nbsp;Author: {{post.author}}</p>
+    <p id='date'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      {{post.publish_date}}</p>
+    <p>{{post.post}} </p>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+{% endblock %}
+
+{% block pagination   %}
+
+{% endblock%}

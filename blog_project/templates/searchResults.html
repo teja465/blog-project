@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="home page" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+     <link rel="stylesheet" href="{% static "index.css"%}">
+     <link rel="stylesheet" href="{% static "bootstrap.css"%}">
+    <title>
+      {% block title%}
+      {% endblock %}
+
+
+    </title>
+
+    <link rel="stylesheet" href="{% static 'index.css' %}">
+  </head>
+  <body>
+
+<h3>following posts titles are matched with your search results</h3>
+<br>
+<div class="content">
+  <a href="http://127.0.0.1:8000/" class="btn btn-info">back</a>
+
+
+  {% for post in posts %}
+
+      <h1 id='ttle'>{{post.title}}</h1>
+      <p> &nbsp;&nbsp;&nbsp;&nbsp;Author: {{post.author}}</p>
+      <p id='date'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        {{post.publish_date}}</p>
+      <p>{{post.post}} </a></p>
+
+
+
+
+  {%  endfor %}
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
